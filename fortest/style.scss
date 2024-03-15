@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.scrolling-image-container {
+}
+.dronee {
+  position: relative;
+}
+#drone {
+  width: 31%;
+}
+.eagle {
+  width: 7%;
+  position: absolute;
+  top: 70px;
+  opacity: 1;
+  animation: eagle 12s linear infinite;
+}
+@keyframes eagle {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  20% {
+    right: 20%;
+    opacity: 1;
+  }
+  40% {
+    right: 40%;
+    opacity: 1;
+  }
+  60% {
+    right: 60%;
+    opacity: 1;
+  }
+  80% {
+    right: 80%;
+    top: 7rem;
+    opacity: 1;
+  }
+  100% {
+    right: 100%;
+    opacity: 0;
+  }
+}
+.kaktus {
+  width: 17%;
+  position: absolute;
+  bottom: 2rem;
+  right: 5%;
+}
+.scrolling-image {
+  background: url("./background-image.jpg") repeat-x;
+  height: 750px;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
+.scrolling-image {
+  background: url(https://static.vecteezy.com/system/resources/previews/002/836/675/original/game-desert-background-vector.jpg)
+    repeat-x;
+
+  height: 750px;
+  width: 7680px;
+
+  animation: slide 12s linear infinite;
+}
