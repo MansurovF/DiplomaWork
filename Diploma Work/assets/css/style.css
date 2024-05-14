@@ -9,16 +9,10 @@ body {
 #obj {
   height: 20%;
   position: relative;
-  width: 20%;
+  width: 13%;
   left: 0;
   top: 16rem;
 }
-/* .dronee {
-  position: relative;
-}
-#drone {
-  width: 31%;
-} */
 .eagle {
   width: 7%;
   position: absolute;
@@ -50,6 +44,76 @@ body {
   }
   100% {
     right: 100%;
+    opacity: 0;
+  }
+}
+.eagle-2 {
+  position: absolute;
+  width: 9%;
+  top: 1rem;
+  left: -7%;
+  animation: eagle-2 24s linear infinite;
+  opacity: 1;
+}
+@keyframes eagle-2 {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  20% {
+    left: 20%;
+    opacity: 1;
+  }
+  40% {
+    left: 40%;
+    opacity: 1;
+  }
+  60% {
+    left: 60%;
+    opacity: 1;
+  }
+  80% {
+    left: 80%;
+    top: 5rem;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+.eagle-3 {
+  position: absolute;
+  width: 6%;
+  top: 12rem;
+  left: -9%;
+  animation: eagle-3 44s linear infinite;
+  opacity: 1;
+}
+@keyframes eagle-3 {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  20% {
+    left: 20%;
+    opacity: 1;
+  }
+  40% {
+    left: 40%;
+    opacity: 1;
+  }
+  60% {
+    left: 60%;
+    opacity: 1;
+  }
+  80% {
+    left: 80%;
+    top: 8rem;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
     opacity: 0;
   }
 }
@@ -134,14 +198,13 @@ body {
     opacity: 0;
   }
 }
-
 .kaktus-2 {
   position: absolute;
   bottom: 1rem;
   width: 11%;
   margin: 0 1rem;
   bottom: 4%;
-  /* animation: kaktus-2 9s linear infinite; */
+  animation: kaktus-2 9s linear infinite;
 }
 @keyframes kaktus-2 {
   0% {
@@ -175,7 +238,7 @@ body {
   bottom: 2rem;
   opacity: 1;
   bottom: 1%;
-  /* animation: kaktus-3 4s linear infinite; */
+  animation: kaktus-3 7s linear infinite;
 }
 @keyframes kaktus-3 {
   0% {
@@ -226,7 +289,6 @@ body {
     opacity: 0.8;
   }
 }
-
 .scrolling-image {
   background: url("./background-image.jpg") repeat-x;
   height: 750px;
@@ -242,11 +304,10 @@ body {
     transform: translate(-3840px);
   }
 }
-
 .scrolling-image {
   background: url(https://static.vecteezy.com/system/resources/previews/002/836/675/original/game-desert-background-vector.jpg)
     repeat-x;
   height: 750px;
   width: 76800px;
-  /* animation: slide 14s linear infinite; */
+  animation: slide 14s linear infinite;
 }
